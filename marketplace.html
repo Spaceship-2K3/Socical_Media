@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./img/Home/favicon.png" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/common.css" />
+        <link rel="stylesheet" href="./assets/css/marketplace.css" />
+        <title>Marketplace</title>
+    </head>
+    <body>
+        <!-- ! Navbar -->
+        <nav>
+            <div class="nav-left">
+                <a
+                    style="display: inline-block"
+                    class="wrapper-logo"
+                    href="./index.html"
+                    ><img src="./img/Home/logo.png" alt="logo" class="logo"
+                /></a>
+                <ul>
+                    <li>
+                        <img
+                            src="./img/Home/notification.png"
+                            alt="notification"
+                        />
+                    </li>
+                    <li>
+                        <img src="./img/Home/inbox.png" alt="inbox" />
+                    </li>
+                    <li>
+                        <img src="./img/Home/video.png" alt="video" />
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <img src="./img/Home/search.png" alt="search" />
+                    <input type="text" placeholder="Search" />
+                </div>
+
+                <div
+                    class="nav-user-icon online"
+                    onclick="settingsMenuToggle()"
+                >
+                    <img src="./img/Home/profile-pic.png" alt="profile-pic" />
+                </div>
+            </div>
+            <!-- ! Settings -->
+            <div class="settings-menu">
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="./img/Home/profile-pic.png" alt="" />
+                        <div class="">
+                            <p>John Nicholson</p>
+                            <a href="#!"> See your profile</a>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="user-profile">
+                        <img src="./img/Home/feedback.png" alt="" />
+                        <div class="">
+                            <p>Give Feedback</p>
+                            <a href="#!">Help us to improve the new design</a>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="setting-links">
+                        <img
+                            src="./img/Home/setting.png"
+                            class="settings-icon"
+                            alt="setting"
+                        />
+                        <a href="#!">
+                            Settings & Privacy
+                            <img src="./img/Home/arrow.png" width="10px" alt=""
+                        /></a>
+                    </div>
+                    <div class="setting-links">
+                        <img
+                            src="./img/Home/help.png"
+                            class="settings-icon"
+                            alt="setting"
+                        />
+                        <a href="#!">
+                            Help & Support
+                            <img src="./img/Home/arrow.png" width="10px" alt=""
+                        /></a>
+                    </div>
+                    <div class="setting-links">
+                        <img
+                            src="./img/Home/display.png"
+                            class="settings-icon"
+                            alt="setting"
+                        />
+                        <a href="#!">
+                            Display & Accessibility
+                            <img src="./img/Home/arrow.png" width="10px" alt=""
+                        /></a>
+                    </div>
+                    <div class="setting-links">
+                        <img
+                            src="./img/Home/logout.png"
+                            class="settings-icon"
+                            alt="setting"
+                        />
+                        <a href="./login.html">
+                            Log out
+                            <img src="./img/Home/arrow.png" width="10px" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ! Container -->
+        <main class="container">
+            <!-- ! market-left -->
+            <div class="market-left">
+                <!-- todo : market-left-header -->
+                <div class="market-left-header">
+                    <h2>Marketplace</h2>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <!-- todo : search-box -->
+                <div class="search-box">
+                    <img src="./img/Home/search.png" alt="search" />
+                    <input type="text" placeholder="Search on Marketplace" />
+                </div>
+                <!-- todo : list-notifi -->
+                <ul class="list-notifi">
+                    <li class="item-notifi active">
+                        <img src="./img/Marketplace/BrowseAll.png" alt="" />
+                        <p>Browse all</p>
+                    </li>
+                    <li class="item-notifi">
+                        <img src="./img/Marketplace/bell.png" alt="" />
+                        <p>Notification</p>
+                    </li>
+                    <li class="item-notifi">
+                        <img src="./img/Marketplace/mailbox.png" alt="" />
+                        <p>Mailbox</p>
+                    </li>
+                    <li class="item-notifi">
+                        <img src="./img/Marketplace/buy.png" alt="" />
+                        <p>Buying</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                    <li class="item-notifi">
+                        <img src="./img/Marketplace/sell.png" alt="" />
+                        <p>Sell</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </li>
+                </ul>
+                <a href="#!" class="btn-create">
+                    <i class="fa-solid fa-plus"></i>
+                    Create a new listing
+                </a>
+
+                <div class="category">
+                    <h3>Category</h3>
+                    <ul class="category-list">
+                        <li class="category-item active">
+                            <img src="./img/Marketplace/toy-icon.png" alt="" />
+                            <p>Toy</p>
+                        </li>
+                        <li class="category-item">
+                            <img src="./img/Marketplace/pet.png" alt="" />
+                            <p>Pet supplies</p>
+                        </li>
+                        <li class="category-item">
+                            <img src="./img/Marketplace/settings.png" alt="" />
+                            <p>Home Repair Tools</p>
+                        </li>
+                        <li class="category-item">
+                            <img src="./img/Marketplace/device.png" alt="" />
+                            <p>Electronics device</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ! market-right -->
+            <div class="market-right">
+                <div class="market-head">
+                    <h2>Today's Choice</h2>
+                    <a href="#!" class="market-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        UTEHY District. 10km
+                    </a>
+                </div>
+                <ul class="product-list">
+                    <li class="product-item">
+                        <img src="./img/Marketplace/toy1.jpg" alt="" />
+                        <div class="product-info">
+                            <div class="product-info-head">
+                                <h4>Minions</h4>
+                                <p class="price">10$</p>
+                            </div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Nobis, similique!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <img src="./img/Marketplace/toy2.jpg" alt="" />
+                        <div class="product-info">
+                            <div class="product-info-head">
+                                <h4>Astronaut</h4>
+                                <p class="price">20$</p>
+                            </div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Nobis, similique!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <img src="./img/Marketplace/toy3.jpg" alt="" />
+                        <div class="product-info">
+                            <div class="product-info-head">
+                                <h4>Cat</h4>
+                                <p class="price">30$</p>
+                            </div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Nobis, similique!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <img src="./img/Marketplace/toy4.jpg" alt="" />
+                        <div class="product-info">
+                            <div class="product-info-head">
+                                <h4>Batman</h4>
+                                <p class="price">40$</p>
+                            </div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Nobis, similique!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <img src="./img/Marketplace/toy5.jpg" alt="" />
+                        <div class="product-info">
+                            <div class="product-info-head">
+                                <h4>WALL·E</h4>
+                                <p class="price">50$</p>
+                            </div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Nobis, similique!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <img src="./img/Marketplace/toy6.jpg" alt="" />
+                        <div class="product-info">
+                            <div class="product-info-head">
+                                <h4>Star Wars</h4>
+                                <p class="price">60$</p>
+                            </div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Nobis, similique!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <img src="./img/Marketplace/toy7.jpg" alt="" />
+                        <div class="product-info">
+                            <div class="product-info-head">
+                                <h4>Iron man</h4>
+                                <p class="price">70$</p>
+                            </div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Nobis, similique!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <img src="./img/Marketplace/toy8.jpg" alt="" />
+                        <div class="product-info">
+                            <div class="product-info-head">
+                                <h4>Car</h4>
+                                <p class="price">80$</p>
+                            </div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Nobis, similique!
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- ! Footer -->
+        <footer class="footer">
+            <div class="row">
+                <div class="col">
+                    <h4>About</h4>
+                    <ul>
+                        <li>Company</li>
+                        <li>Team</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Web design</li>
+                        <li>Development</li>
+                        <li>Hosting</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li>Help Center</li>
+                        <li>FAQs</li>
+                        <li>System Status</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img
+                        src="./img/Home/logo.png"
+                        alt="logo"
+                        class="logo-footer"
+                    />
+                    <div class="footer-socials">
+                        <img
+                            src="./img/Home/facebook.png"
+                            alt="facebook"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/youtube.png"
+                            alt="youtube"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/twitter.png"
+                            alt="twitter"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/google.png"
+                            alt="google"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/instagram.png"
+                            alt="instagram"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/github.png"
+                            alt="github"
+                            class="social-item-img"
+                        />
+                    </div>
+                </div>
+            </div>
+            <p class="coppyright">Vũ Đình Đạt © 2023</p>
+        </footer>
+    </body>
+    <script src="./app.js"></script>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./img/Home/favicon.png" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/common.css" />
+        <link rel="stylesheet" href="./assets/css/group.css" />
+        <title>Home</title>
+    </head>
+    <body>
+        <!-- ! Navbar -->
+        <nav>
+            <div class="nav-left">
+                <a
+                    style="display: inline-block"
+                    class="wrapper-logo"
+                    href="./index.html"
+                    ><img src="./img/Home/logo.png" alt="logo" class="logo"
+                /></a>
+                <ul>
+                    <li>
+                        <img
+                            src="./img/Home/notification.png"
+                            alt="notification"
+                        />
+                    </li>
+                    <li>
+                        <img src="./img/Home/inbox.png" alt="inbox" />
+                    </li>
+                    <li>
+                        <img src="./img/Home/video.png" alt="video" />
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <img src="./img/Home/search.png" alt="search" />
+                    <input type="text" placeholder="Search" />
+                </div>
+
+                <div
+                    class="nav-user-icon online"
+                    onclick="settingsMenuToggle()"
+                >
+                    <img src="./img/Home/profile-pic.png" alt="profile-pic" />
+                </div>
+            </div>
+            <!-- ! Settings -->
+            <div class="settings-menu">
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="./img/Home/profile-pic.png" alt="" />
+                        <div class="">
+                            <p>John Nicholson</p>
+                            <a href="#!"> See your profile</a>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="user-profile">
+                        <img src="./img/Home/feedback.png" alt="" />
+                        <div class="">
+                            <p>Give Feedback</p>
+                            <a href="#!">Help us to improve the new design</a>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="setting-links">
+                        <img
+                            src="./img/Home/setting.png"
+                            class="settings-icon"
+                            alt="setting"
+                        />
+                        <a href="#!">
+                            Settings & Privacy
+                            <img src="./img/Home/arrow.png" width="10px" alt=""
+                        /></a>
+                    </div>
+                    <div class="setting-links">
+                        <img
+                            src="./img/Home/help.png"
+                            class="settings-icon"
+                            alt="setting"
+                        />
+                        <a href="#!">
+                            Help & Support
+                            <img src="./img/Home/arrow.png" width="10px" alt=""
+                        /></a>
+                    </div>
+                    <div class="setting-links">
+                        <img
+                            src="./img/Home/display.png"
+                            class="settings-icon"
+                            alt="setting"
+                        />
+                        <a href="#!">
+                            Display & Accessibility
+                            <img src="./img/Home/arrow.png" width="10px" alt=""
+                        /></a>
+                    </div>
+                    <div class="setting-links">
+                        <img
+                            src="./img/Home/logout.png"
+                            class="settings-icon"
+                            alt="setting"
+                        />
+                        <a href="./login.html">
+                            Log out
+                            <img src="./img/Home/arrow.png" width="10px" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ! Container -->
+        <main class="container">
+            <!-- ! group-left -->
+            <div class="group-left">
+                <!-- todo : group-head -->
+                <div class="group-head">
+                    <h2>Group</h2>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+
+                <!-- todo : search-box -->
+                <div class="search-box">
+                    <img src="./img/Home/search.png" alt="search" />
+                    <input type="text" placeholder="Find group" />
+                </div>
+
+                <!-- todo : my group -->
+                <ul class="my-groups">
+                    <li class="my-group-item">
+                        <img src="./img/Group/feed.png" alt="" />
+                        <span>Your feed</span>
+                    </li>
+                    <li class="my-group-item">
+                        <img src="./img/Group/discover.png" alt="" />
+                        <span>Discover</span>
+                    </li>
+                    <li class="my-group-item">
+                        <img src="./img/Group/groups.png" alt="" />
+                        <span>My group</span>
+                    </li>
+                </ul>
+
+                <button class="btn-create">
+                    <i class="fa-solid fa-plus"></i> Create a new group
+                </button>
+
+                <!-- todo : group-joined -->
+                <div class="group-joined">
+                    <div class="group-joined-head">
+                        <h3>The group joined</h3>
+                        <a href="#!">Watch all</a>
+                    </div>
+
+                    <!-- todo : group-joined-list -->
+                    <ul class="group-joined-list">
+                        <li class="group-joined-item active">
+                            <img src="./img/Group/group1.png" alt="" />
+                            <div class="group-joined-infor">
+                                <h4>Best friend</h4>
+                                <p>Last operation : 1 hours</p>
+                            </div>
+                        </li>
+                        <li class="group-joined-item">
+                            <img src="./img/Group/group2.png" alt="" />
+                            <div class="group-joined-infor">
+                                <h4>Japan</h4>
+                                <p>Last operation : 2 hours</p>
+                            </div>
+                        </li>
+                        <li class="group-joined-item">
+                            <img src="./img/Group/group3.png" alt="" />
+                            <div class="group-joined-infor">
+                                <h4>JUJUTSU KAISEN</h4>
+                                <p>Last operation : 9 hours</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ! group-right -->
+            <div class="group-right">
+                <div class="group-show">
+                    <div class="group-show-member">
+                        <div class="wrapper-bgi">
+                            <img
+                                src="./img/Group/group1.png"
+                                class="bgi-member"
+                                alt=""
+                            />
+                        </div>
+                        <div class="group-show-info">
+                            <div class="group-show-info-title">
+                                <h2>Best friend</h2>
+                                <ul class="group-show-info-members">
+                                    <li class="group-show-info-member">
+                                        <img
+                                            src="./img/Home/member-1.png"
+                                            alt=""
+                                        />
+                                    </li>
+                                    <li class="group-show-info-member">
+                                        <img
+                                            src="./img/Home/member-2.png"
+                                            alt=""
+                                        />
+                                    </li>
+                                    <li class="group-show-info-member">
+                                        <img
+                                            src="./img/Home/member-3.png"
+                                            alt=""
+                                        />
+                                    </li>
+                                    <li class="group-show-info-member">
+                                        <img
+                                            src="./img/Home/member-4.png"
+                                            alt=""
+                                        />
+                                    </li>
+                                    <li class="group-show-info-member">
+                                        <img
+                                            src="./img/Home/member-5.png"
+                                            alt=""
+                                        />
+                                    </li>
+                                    <li class="group-show-info-member">
+                                        <img
+                                            src="./img/Home/member-6.png"
+                                            alt=""
+                                        />
+                                    </li>
+                                    <li class="group-show-info-member">
+                                        <img
+                                            src="./img/Home/member-7.png"
+                                            alt=""
+                                        />
+                                    </li>
+                                    <li class="group-show-info-member">
+                                        <img
+                                            src="./img/Home/member-8.png"
+                                            alt=""
+                                        />
+                                    </li>
+                                    <li class="group-show-info-member">
+                                        <img
+                                            src="./img/Home/member-9.png"
+                                            alt=""
+                                        />
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="group-show-add">
+                                <a href="#!" class="btn-add"
+                                    ><i class="fa-solid fa-plus"></i> Add
+                                </a>
+                                <a href="#!" class="btn-control"
+                                    ><i class="fa-solid fa-angle-down"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- ! Footer -->
+        <footer class="footer">
+            <div class="row">
+                <div class="col">
+                    <h4>About</h4>
+                    <ul>
+                        <li>Company</li>
+                        <li>Team</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Web design</li>
+                        <li>Development</li>
+                        <li>Hosting</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li>Help Center</li>
+                        <li>FAQs</li>
+                        <li>System Status</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img
+                        src="./img/Home/logo.png"
+                        alt="logo"
+                        class="logo-footer"
+                    />
+                    <div class="footer-socials">
+                        <img
+                            src="./img/Home/facebook.png"
+                            alt="facebook"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/youtube.png"
+                            alt="youtube"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/twitter.png"
+                            alt="twitter"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/google.png"
+                            alt="google"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/instagram.png"
+                            alt="instagram"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/github.png"
+                            alt="github"
+                            class="social-item-img"
+                        />
+                    </div>
+                </div>
+            </div>
+            <p class="coppyright">Vũ Đình Đạt © 2023</p>
+        </footer>
+    </body>
+    <script src="./app.js"></script>
+</html>

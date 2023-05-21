@@ -1,0 +1,219 @@
+/* ! group-left */
+.group-left {
+    width: 36rem;
+    padding: 0 1rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.group-left .search-box {
+    width: 100%;
+    margin: 1rem auto 0;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.group-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.2rem;
+}
+.group-head h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.group-head i {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100rem;
+    background-color: rgb(212, 212, 212);
+    color: rgb(25, 25, 25);
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.my-groups {
+    list-style: none;
+    margin: 1.4rem 0;
+}
+.my-group-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 6px 8px;
+}
+.my-group-item:hover {
+    background-color: rgb(218, 218, 218);
+}
+.my-group-item img {
+    background-color: rgb(212, 212, 212);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100rem;
+    padding: 8px;
+    margin-right: 1rem;
+}
+.my-group-item span {
+    font-size: 1.4rem;
+    color: rgb(50, 50, 50);
+}
+.btn-create {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 136, 255);
+    padding: 1rem 0;
+    background-color: rgb(175, 218, 255);
+    font-size: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn-create:hover {
+    background-color: rgb(183, 183, 183);
+}
+.btn-create i {
+    font-size: 1.3rem;
+    margin-right: 4px;
+}
+
+/* group-joined */
+.group-joined {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgb(157, 157, 157);
+}
+
+.group-joined-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.group-joined-head h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.group-joined-head a {
+    text-decoration: none;
+    color: rgb(0, 136, 255);
+    font-size: 1.4rem;
+}
+.group-joined-head a:hover {
+    text-decoration: underline;
+}
+
+.group-joined-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+.group-joined-item.active {
+    background-color: #d1d1d1;
+}
+.group-joined-item:not(.group-joined-item.active):hover {
+    background-color: #e5e5e5;
+}
+.group-joined-item img {
+    width: 4.5rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-right: 1rem;
+}
+.group-joined-item h4 {
+    font-size: 1.3rem;
+}
+.group-joined-item p {
+    font-size: 1.1rem;
+    color: #646464;
+}
+
+/* ! group-right */
+.group-right {
+    padding: 1.4rem 1.4rem 0;
+    flex: 1;
+}
+
+.group-show {
+}
+
+.group-show-member {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+
+    border-radius: 12px;
+}
+.wrapper-bgi .bgi-member {
+    width: 100%;
+    height: 38rem;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.group-show-info {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.group-show-info-title h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+}
+
+.group-show-info-members {
+    display: flex;
+    list-style: none;
+}
+.group-show-info-member img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100rem;
+    margin-left: -8px;
+}
+
+.group-show-add {
+    display: flex;
+    align-items: center;
+}
+
+.group-show-add a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    padding: 8px 12px;
+
+    margin-right: 1rem;
+    border-radius: 4px;
+    min-height: 30px;
+}
+
+.btn-add {
+    background-color: #00ff62;
+    color: white;
+    font-size: 1.3rem;
+}
+.btn-add i {
+    font-size: 1.1rem;
+    margin-right: 4px;
+}
+
+.btn-control {
+    background-color: #b4b4b4;
+}

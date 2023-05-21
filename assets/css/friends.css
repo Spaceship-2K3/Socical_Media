@@ -1,0 +1,163 @@
+/* ! Container */
+/* friend-left */
+.friend-left {
+    width: 36rem;
+    padding: 0 1rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.friend-left .search-box {
+    width: 100%;
+    margin: 1rem auto 0;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.total-friends h2 {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.item-friend {
+    padding: 5px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    margin-bottom: 0.8rem;
+    border-radius: 6px;
+}
+
+.item-friend.active {
+    background-color: rgb(219, 219, 219);
+}
+.item-friend:not(.item-friend.active):hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item-friend img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 100rem;
+    margin-right: 1rem;
+}
+.item-friend .info {
+    flex: 1;
+}
+.item-friend .info h3 {
+    font-size: 1.5rem;
+    color: rgb(5, 5, 5);
+}
+.item-friend .info p {
+    font-size: 1.2rem;
+    color: rgb(138, 138, 138);
+}
+.item-friend .control-friend {
+    position: relative;
+}
+
+.item-friend .control-friend i {
+    font-size: 1.8rem;
+    padding: 4px 6px;
+    border-radius: 50%;
+}
+.item-friend .control-friend i:hover {
+    background-color: rgb(84, 172, 255);
+}
+
+/* friend-right */
+
+.friend-right {
+    flex: 1;
+    padding: 1rem 1.8rem 0;
+}
+.friend-show {
+}
+.friend-show-member {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+
+    border-radius: 12px;
+}
+.wrapper-bgi .bgi-member {
+    width: 100%;
+    height: 38rem;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+.bgi-member {
+}
+.info-member {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+}
+.info-member-left {
+    display: flex;
+}
+.info-member-img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100rem;
+    border: 4px solid rgb(188, 188, 188);
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+}
+.info-member-name {
+    padding: 2rem 0;
+    margin-left: 2rem;
+}
+
+.info-member-name h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.info-member-name p {
+    font-size: 1.6rem;
+    color: rgb(61, 61, 61);
+    margin: 8px 0 1.2rem;
+}
+
+.list-friends-common {
+    display: flex;
+}
+.list-friends-common-imgs {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100rem;
+}
+.info-member-right {
+}
+
+.friend-control {
+    display: flex;
+}
+.friend-control-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.friend-control-friend {
+    background-color: rgb(222, 222, 222);
+}
+.friend-control-mess {
+    background-color: rgb(80, 159, 255);
+    color: white;
+}
+
+.friend-control-down {
+    background-color: rgb(154, 255, 141);
+}
+
+.friend-control-item img {
+    width: 14px;
+    margin-right: 3px;
+}
+.friend-control-item span {
+    font-size: 1.2rem;
+}

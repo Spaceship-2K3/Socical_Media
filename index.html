@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./img/Home/favicon.png" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/common.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Home</title>
+    </head>
+    <body>
+        <!-- ! Navbar -->
+        <nav>
+            <div class="nav-left">
+                <a
+                    style="display: inline-block"
+                    class="wrapper-logo"
+                    href="./index.html"
+                    ><img src="./img/Home/logo.png" alt="logo" class="logo"
+                /></a>
+                <ul>
+                    <li>
+                        <img
+                            src="./img/Home/notification.png"
+                            alt="notification"
+                        />
+                    </li>
+                    <li>
+                        <img src="./img/Home/inbox.png" alt="inbox" />
+                    </li>
+                    <li>
+                        <img src="./img/Home/video.png" alt="video" />
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <img src="./img/Home/search.png" alt="search" />
+                    <input type="text" placeholder="Search" />
+                </div>
+
+                <div
+                    class="nav-user-icon online"
+                    onclick="settingsMenuToggle()"
+                >
+                    <img src="./img/Home/profile-pic.png" alt="profile-pic" />
+                </div>
+            </div>
+            <!-- ! Settings -->
+            <div class="settings-menu">
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="./img/Home/profile-pic.png" alt="" />
+                        <div class="">
+                            <p>John Nicholson</p>
+                            <a href="#!"> See your profile</a>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="user-profile">
+                        <img src="./img/Home/feedback.png" alt="" />
+                        <div class="">
+                            <p>Give Feedback</p>
+                            <a href="#!">Help us to improve the new design</a>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="setting-links">
+                        <img
+                            src="./img/Home/setting.png"
+                            class="settings-icon"
+                            alt="setting"
+                        />
+                        <a href="#!">
+                            Settings & Privacy
+                            <img src="./img/Home/arrow.png" width="10px" alt=""
+                        /></a>
+                    </div>
+                    <div class="setting-links">
+                        <img
+                            src="./img/Home/help.png"
+                            class="settings-icon"
+                            alt="setting"
+                        />
+                        <a href="#!">
+                            Help & Support
+                            <img src="./img/Home/arrow.png" width="10px" alt=""
+                        /></a>
+                    </div>
+                    <div class="setting-links">
+                        <img
+                            src="./img/Home/display.png"
+                            class="settings-icon"
+                            alt="setting"
+                        />
+                        <a href="#!">
+                            Display & Accessibility
+                            <img src="./img/Home/arrow.png" width="10px" alt=""
+                        /></a>
+                    </div>
+                    <div class="setting-links">
+                        <img
+                            src="./img/Home/logout.png"
+                            class="settings-icon"
+                            alt="setting"
+                        />
+                        <a href="./login.html">
+                            Log out
+                            <img src="./img/Home/arrow.png" width="10px" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ! Container -->
+        <main class="container">
+            <!-- todo : left sidebar -->
+            <div class="left-sidebar">
+                <div class="imp-links">
+                    <a href="./index.html">
+                        <img src="./img/Home/news.png" alt="news" />
+                        Latest News
+                    </a>
+                    <a href="./friend.html">
+                        <img src="./img/Home/friends.png" alt="friends" />
+                        Friends
+                    </a>
+                    <a href="./group.html">
+                        <img src="./img/Home/group.png" alt="group" />
+                        Group
+                    </a>
+                    <a href="./marketplace.html">
+                        <img
+                            src="./img/Home/marketplace.png"
+                            alt="marketplace"
+                        />
+                        Marketplace
+                    </a>
+                    <!-- 1876F2 -->
+
+                    <a href="#!">See More</a>
+                </div>
+
+                <div class="shortcut-links">
+                    <p>Your Shortcuts</p>
+                    <a href="#!"
+                        ><img
+                            src="./img/Home/shortcut-1.png"
+                            alt="shortcut-1"
+                        />Web Developers
+                    </a>
+                    <a href="#!"
+                        ><img
+                            src="./img/Home/shortcut-2.png"
+                            alt="shortcut-2"
+                        />UI/UX
+                    </a>
+                    <a href="#!"
+                        ><img
+                            src="./img/Home/shortcut-3.png"
+                            alt="shortcut-3"
+                        />Web Design
+                    </a>
+                    <a href="#!"
+                        ><img
+                            src="./img/Home/shortcut-4.png"
+                            alt="shortcut-4"
+                        />FullStack Developers
+                    </a>
+                </div>
+            </div>
+
+            <!-- todo : main content -->
+            <div class="main-content">
+                <div class="story-gallery">
+                    <div class="story story1">
+                        <img src="./img/Home/upload.png" alt="upload" />
+                        <p>Post Story</p>
+                    </div>
+                    <div class="story story2">
+                        <img src="./img/Home/member-1.png" alt="upload" />
+                        <p>Alison Mina</p>
+                    </div>
+                    <div class="story story3">
+                        <img src="./img/Home/member-2.png" alt="upload" />
+                        <p>Post Story</p>
+                    </div>
+                    <div class="story story4">
+                        <img src="./img/Home/member-3.png" alt="upload" />
+                        <p>Jackson Aston</p>
+                    </div>
+                    <div class="story story5">
+                        <img src="./img/Home/member-4.png" alt="upload" />
+                        <p>Samona Rose</p>
+                    </div>
+                </div>
+
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="./img/Home/profile-pic.png" alt="" />
+                        <div class="">
+                            <p>John Nicholson</p>
+                            <small>
+                                Public <i class="fa-solid fa-sort-down"></i
+                            ></small>
+                        </div>
+                    </div>
+
+                    <div class="post-input-container">
+                        <textarea
+                            placeholder="What's on your mind, Jonh ?"
+                            rows="3"
+                        ></textarea>
+
+                        <div class="add-post-links">
+                            <a href="#!">
+                                <img src="./img/Home/live-video.png" alt="" />
+                                Live Video</a
+                            >
+                            <a href="#!">
+                                <img src="./img/Home/photo.png" alt="" /> Photo
+                                /Video</a
+                            >
+                            <a href="#!">
+                                <img src="./img/Home/feeling.png" alt="" />
+                                Feeling/ Video</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 1 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./img/Home/profile-pic.png" alt="" />
+                            <div class="">
+                                <p>John Nicholson</p>
+                                <span>June 22 2022, 13:40 pm</span>
+                            </div>
+                        </div>
+
+                        <a href="#!"> <i class="fa-solid fa-ellipsis"></i></a>
+                    </div>
+
+                    <p class="post-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Dolorem excepturi natus delectus obcaecati? Sequi
+                        tenetur maxime sapiente at odit hic.
+                    </p>
+                    <img
+                        src="./img/Home/feed-image-1.png"
+                        class="post-img"
+                        alt=""
+                    />
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div class="">
+                                <img src="./img/Home/like-blue.png" alt="" />
+                                123
+                            </div>
+                            <div class="">
+                                <img src="./img/Home/comments.png" alt="" />
+                                83
+                            </div>
+                            <div class="">
+                                <img src="./img/Home/share.png" alt="" />
+                                20
+                            </div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./img/Home/profile-pic.png" alt="" />
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./img/Home/member-1.png" alt="" />
+                            <div class="">
+                                <p>Alison Mina</p>
+                                <span>June 11 2021, 11:40 pm</span>
+                            </div>
+                        </div>
+
+                        <a href="#!"> <i class="fa-solid fa-ellipsis"></i></a>
+                    </div>
+
+                    <p class="post-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Dolorem excepturi natus delectus obcaecati? Sequi
+                        tenetur maxime sapiente at odit hic.
+                    </p>
+                    <img
+                        src="./img/Home/feed-image-2.png"
+                        class="post-img"
+                        alt=""
+                    />
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div class="">
+                                <img src="./img/Home/like-blue.png" alt="" />
+                                100
+                            </div>
+                            <div class="">
+                                <img src="./img/Home/comments.png" alt="" />
+                                33
+                            </div>
+                            <div class="">
+                                <img src="./img/Home/share.png" alt="" />
+                                29
+                            </div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./img/Home/member-1.png" alt="" />
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./img/Home/member-2.png" alt="" />
+                            <div class="">
+                                <p>Jackson Aston</p>
+                                <span>Sep 11 2020, 13:40 am</span>
+                            </div>
+                        </div>
+
+                        <a href="#!"> <i class="fa-solid fa-ellipsis"></i></a>
+                    </div>
+
+                    <p class="post-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Dolorem excepturi natus delectus obcaecati? Sequi
+                        tenetur maxime sapiente at odit hic.
+                    </p>
+                    <img
+                        src="./img/Home/feed-image-3.png"
+                        class="post-img"
+                        alt=""
+                    />
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div class="">
+                                <img src="./img/Home/like-blue.png" alt="" />
+                                123
+                            </div>
+                            <div class="">
+                                <img src="./img/Home/comments.png" alt="" />
+                                83
+                            </div>
+                            <div class="">
+                                <img src="./img/Home/share.png" alt="" />
+                                20
+                            </div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./img/Home/member-2.png" alt="" />
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./img/Home/member-3.png" alt="" />
+                            <div class="">
+                                <p>Samona Rose</p>
+                                <span>Oct 1 2022, 13:40 am</span>
+                            </div>
+                        </div>
+
+                        <a href="#!"> <i class="fa-solid fa-ellipsis"></i></a>
+                    </div>
+
+                    <p class="post-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Dolorem excepturi natus delectus obcaecati? Sequi
+                        tenetur maxime sapiente at odit hic.
+                    </p>
+                    <img
+                        src="./img/Home/feed-image-4.png"
+                        class="post-img"
+                        alt=""
+                    />
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div class="">
+                                <img src="./img/Home/like.png" alt="" />
+                                123
+                            </div>
+                            <div class="">
+                                <img src="./img/Home/comments.png" alt="" />
+                                83
+                            </div>
+                            <div class="">
+                                <img src="./img/Home/share.png" alt="" />
+                                20
+                            </div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./img/Home/member-3.png" alt="" />
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 5 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./img/Home/member-5.png" alt="" />
+                            <div class="">
+                                <p>Alexander</p>
+                                <span>Oct 12 2022, 13:40 am</span>
+                            </div>
+                        </div>
+
+                        <a href="#!"> <i class="fa-solid fa-ellipsis"></i></a>
+                    </div>
+
+                    <p class="post-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Dolorem excepturi natus delectus obcaecati? Sequi
+                        tenetur maxime sapiente at odit hic.
+                    </p>
+                    <img
+                        src="./img/Home/feed-image-5.png"
+                        class="post-img"
+                        alt=""
+                    />
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div class="">
+                                <img src="./img/Home/like.png" alt="" />
+                                123
+                            </div>
+                            <div class="">
+                                <img src="./img/Home/comments.png" alt="" />
+                                83
+                            </div>
+                            <div class="">
+                                <img src="./img/Home/share.png" alt="" />
+                                20
+                            </div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./img/Home/member-5.png" alt="" />
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="load-more-btn">Load More</button>
+            </div>
+
+            <!-- todo : right sidebar -->
+            <div class="right-sidebar">
+                <div class="sidebar-title">
+                    <h4>Events</h4>
+                    <a href="#!">See All</a>
+                </div>
+
+                <div class="event">
+                    <div class="left-event">
+                        <h3>18</h3>
+                        <span>March</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Social Media</h4>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i> Willson
+                            Tech Park
+                        </p>
+                        <a href="#!">More Info</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="left-event">
+                        <h3>20</h3>
+                        <span>May</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Mobile Marketing</h4>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i> Willson
+                            Tech Park
+                        </p>
+                        <a href="#!">More Info</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-title">
+                    <h4>Advertisement</h4>
+                    <a href="#!">Close</a>
+                </div>
+                <img
+                    style="width: 100%; margin-bottom: 2rem; border-radius: 6px"
+                    src="./img/Home/advertisement.png"
+                    alt="advertisement"
+                />
+                <div class="sidebar-title">
+                    <h4>Conversation</h4>
+                    <a href="#!">Hide Chat</a>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="./img/Home/member-1.png" alt="" />
+                    </div>
+                    <p>Alison Mina</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="./img/Home/member-2.png" alt="" />
+                    </div>
+                    <p>Jackson Aston</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="./img/Home/member-3.png" alt="" />
+                    </div>
+                    <p>Samona Rose</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- ! Footer -->
+        <footer class="footer">
+            <div class="row">
+                <div class="col">
+                    <h4>About</h4>
+                    <ul>
+                        <li>Company</li>
+                        <li>Team</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Web design</li>
+                        <li>Development</li>
+                        <li>Hosting</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li>Help Center</li>
+                        <li>FAQs</li>
+                        <li>System Status</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img
+                        src="./img/Home/logo.png"
+                        alt="logo"
+                        class="logo-footer"
+                    />
+                    <div class="footer-socials">
+                        <img
+                            src="./img/Home/facebook.png"
+                            alt="facebook"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/youtube.png"
+                            alt="youtube"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/twitter.png"
+                            alt="twitter"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/google.png"
+                            alt="google"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/instagram.png"
+                            alt="instagram"
+                            class="social-item-img"
+                        />
+                        <img
+                            src="./img/Home/github.png"
+                            alt="github"
+                            class="social-item-img"
+                        />
+                    </div>
+                </div>
+            </div>
+            <p class="coppyright">Vũ Đình Đạt © 2023</p>
+        </footer>
+    </body>
+    <script src="./app.js"></script>
+</html>

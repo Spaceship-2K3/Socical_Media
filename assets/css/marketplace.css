@@ -165,11 +165,13 @@
     gap: 28px 16px;
     list-style: none;
     margin-top: 3rem;
+    justify-content: center;
 }
 .product-item {
     border-radius: 10px;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
         rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    background-color: #fff;
 }
 
 .product-info {

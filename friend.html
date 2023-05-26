@@ -137,7 +137,7 @@
                     <h2>9 Bạn bè</h2>
                 </div>
                 <ul class="list-friends">
-                    <li class="item-friend active">
+                    <li class="item-friend" id="Na">
                         <img src="./img/Home/member-1.png" alt="" />
                         <div class="info">
                             <h3>Alison Mina</h3>
@@ -147,7 +147,7 @@
                             <i class="fa-solid fa-ellipsis"></i>
                         </div>
                     </li>
-                    <li class="item-friend">
+                    <li class="item-friend active" id="Nb">
                         <img src=" ./img/Home/member-2.png" alt="" />
                         <div class="info">
                             <h3>Jackson Aston</h3>
@@ -157,7 +157,7 @@
                             <i class="fa-solid fa-ellipsis"></i>
                         </div>
                     </li>
-                    <li class="item-friend">
+                    <li class="item-friend" id="Nc">
                         <img src=" ./img/Home/member-3.png" alt="" />
                         <div class="info">
                             <h3>Samona Rose</h3>
@@ -167,7 +167,7 @@
                             <i class="fa-solid fa-ellipsis"></i>
                         </div>
                     </li>
-                    <li class="item-friend">
+                    <li class="item-friend" id="Nd">
                         <img src=" ./img/Home/member-4.png" alt="" />
                         <div class="info">
                             <h3>Kane</h3>
@@ -177,7 +177,7 @@
                             <i class="fa-solid fa-ellipsis"></i>
                         </div>
                     </li>
-                    <li class="item-friend">
+                    <li class="item-friend" id="Ne">
                         <img src=" ./img/Home/member-5.png" alt="" />
                         <div class="info">
                             <h3>Alexander</h3>
@@ -187,7 +187,7 @@
                             <i class="fa-solid fa-ellipsis"></i>
                         </div>
                     </li>
-                    <li class="item-friend">
+                    <li class="item-friend" id="Nf">
                         <img src=" ./img/Home/member-6.png" alt="" />
                         <div class="info">
                             <h3>Alma</h3>
@@ -197,7 +197,7 @@
                             <i class="fa-solid fa-ellipsis"></i>
                         </div>
                     </li>
-                    <li class="item-friend">
+                    <li class="item-friend" id="Ng">
                         <img src=" ./img/Home/member-7.png" alt="" />
                         <div class="info">
                             <h3>Joyce</h3>
@@ -207,7 +207,7 @@
                             <i class="fa-solid fa-ellipsis"></i>
                         </div>
                     </li>
-                    <li class="item-friend">
+                    <li class="item-friend" id="Nf">
                         <img src=" ./img/Home/member-8.png" alt="" />
                         <div class="info">
                             <h3>Adelaide</h3>
@@ -217,7 +217,7 @@
                             <i class="fa-solid fa-ellipsis"></i>
                         </div>
                     </li>
-                    <li class="item-friend">
+                    <li class="item-friend" id="Np">
                         <img src=" ./img/Home/member-9.png" alt="" />
                         <div class="info">
                             <h3>Devlin</h3>
@@ -230,79 +230,7 @@
                 </ul>
             </div>
             <div class="friend-right">
-                <div class="friend-show">
-                    <div class="friend-show-member">
-                        <div class="wrapper-bgi">
-                            <img
-                                src="./img/Friend/bgi-member1.jpg   "
-                                class="bgi-member"
-                                alt=""
-                            />
-                        </div>
-                        <div class="info-member">
-                            <div class="info-member-left">
-                                <img
-                                    src="./img/Home/member-1.png"
-                                    alt=""
-                                    class="info-member-img"
-                                />
-                                <div class="info-member-name">
-                                    <h2>Alison Mina</h2>
-                                    <p>5 bạn chung</p>
-                                    <div class="list-friends-common">
-                                        <img
-                                            src="./img/Home/member-2.png"
-                                            alt=""
-                                            class="list-friends-common-imgs"
-                                        />
-                                        <img
-                                            src="./img/Home/member-3.png"
-                                            alt=""
-                                            class="list-friends-common-imgs"
-                                        />
-                                        <img
-                                            src="./img/Home/member-4.png"
-                                            alt=""
-                                            class="list-friends-common-imgs"
-                                        />
-                                        <img
-                                            src="./img/Home/member-5.png"
-                                            alt=""
-                                            class="list-friends-common-imgs"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info-member-right">
-                                <div class="friend-control">
-                                    <div
-                                        class="friend-control-item friend-control-friend"
-                                    >
-                                        <img
-                                            src="./img/Friend/approve.png"
-                                            alt=""
-                                        />
-                                        <span>Bạn bè</span>
-                                    </div>
-                                    <div
-                                        class="friend-control-item friend-control-mess"
-                                    >
-                                        <img
-                                            src="./img/Friend/messenger.png"
-                                            alt=""
-                                        />
-                                        <span>Tin nhắn</span>
-                                    </div>
-                                    <div
-                                        class="friend-control-item friend-control-down"
-                                    >
-                                        <i class="fa-solid fa-angle-down"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="friend-show" id="friend-show"></div>
             </div>
         </main>
 
@@ -376,5 +304,6 @@
             <p class="coppyright">Vũ Đình Đạt © 2023</p>
         </footer>
     </body>
-    <script src="./app.js"></script>
+    <script src="./data.js"></script>
+    <script src="./friends.js"></script>
 </html>

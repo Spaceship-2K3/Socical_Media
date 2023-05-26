@@ -73,3 +73,83 @@ const listToy = [
         và thách thức cho các tay đua nhí!`,
     },
 ];
+
+// ! listFriend
+
+let listFriend = [
+    // Alison Mina
+    {
+        id: "Na",
+        imgBgi: "./img/Friend/bgi-member1.jpg",
+        img: "./img/Home/member-1.png",
+        number: 5,
+        name: "Alison Mina",
+    },
+
+    // Jackson Aston
+    {
+        id: "Nb",
+        imgBgi: "./img/Friend/bgi-member2.jpg",
+        img: "./img/Home/member-2.png",
+        number: 2,
+        name: "Jackson Aston",
+    },
+    // Samona Rose
+    {
+        id: "Nc",
+        imgBgi: "./img/Friend/bgi-member3.jpg",
+        img: "./img/Home/member-3.png",
+        number: 3,
+        name: "Samona Rose",
+    },
+
+    // Kane
+    {
+        id: "Nd",
+        imgBgi: "./img/Friend/bgi-member4.jpg",
+        img: "./img/Home/member-4.png",
+        number: 8,
+        name: "Kane",
+    },
+    // Alexander
+    {
+        id: "Ne",
+        imgBgi: "./img/Friend/bgi-member5.jpg",
+        img: "./img/Home/member-5.png",
+        number: 7,
+        name: "Alexander",
+    },
+
+    // Alma
+    {
+        id: "Nf",
+        imgBgi: "./img/Friend/bgi-member6.jpg",
+        img: "./img/Home/member-6.png",
+        number: 1,
+        name: "Alma",
+    },
+    // Joyce
+    {
+        id: "Ng",
+        imgBgi: "./img/Friend/bgi-member7.jpg",
+        img: "./img/Home/member-7.png",
+        number: 3,
+        name: "Joyce",
+    },
+    // Adelaide
+    {
+        id: "Nf",
+        imgBgi: "./img/Friend/bgi-member8.jpg",
+        img: "./img/Home/member-8.png",
+        number: 4,
+        name: "Adelaide",
+    },
+    // Devlin
+    {
+        id: "Np",
+        imgBgi: "./img/Friend/bgi-member9.jpg",
+        img: "./img/Home/member-9.png",
+        number: 5,
+        name: "Devlin",
+    },
+];

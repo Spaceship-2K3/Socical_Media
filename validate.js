@@ -4,6 +4,28 @@ const password = document.querySelector("#password");
 const passwordConfirm = document.querySelector("#password_confirm");
 const form = document.querySelector("form");
 const inputElement = document.querySelectorAll("input");
+let eyeShow = document.querySelectorAll(".fa-eye-slash");
+let showPassword = false;
+eyeShow.forEach(function (item) {
+    item.addEventListener("click", function (event) {
+        let parent = item.parentElement;
+        let inputShow = parent.querySelector("input");
+
+        // Chuyển đổi trạng thái hiển thị mật khẩu
+        showPassword = !showPassword;
+
+        // Thay đổi kiểu input tùy theo trạng thái hiển thị mật khẩu
+        if (showPassword) {
+            inputShow.type = "text";
+            item.classList.remove("fa-eye-slash");
+            item.classList.add("fa-eye");
+        } else {
+            inputShow.type = "password";
+            item.classList.remove("fa-eye");
+            item.classList.add("fa-eye-slash");
+        }
+    });
+});
 
 function showError(input, message) {
     let parent = input.parentElement;
@@ -20,7 +42,7 @@ function showSuccess(input) {
 
 function checkEmptyInvalid(listInput) {
     let isEmptyError = false;
-    listInput.forEach((input) => {
+    inputElement.forEach((input) => {
         input.value = input.value.trim();
         if (!input.value) {
             isEmptyError = true;
@@ -45,13 +67,10 @@ function checkEmail(input) {
     return isEmail;
 }
 
-function checkLengthError(input, min, max) {
+function checkLengthError(input, min) {
     input.value = input.value.trim();
     if (input.value.length < min) {
         showError(input, `Phải có ít nhất ${min} ky tu`);
-        return true;
-    } else if (input.value.length > max) {
-        showError(input, `Không được nhiều hơn  ${max} ky tu`);
         return true;
     }
     showSuccess(input);
@@ -84,19 +103,7 @@ form.addEventListener("submit", function (event) {
         passwordConfirm,
     ]);
     let isEmailError = checkEmail(email);
-    let isUsernameLengthError = checkLengthError(username, 4, 20);
-    let isPasswordLengthError = checkLengthError(password, 2, 20);
+    let isUsernameLengthError = checkLengthError(username, 4);
+    let isPasswordLengthError = checkLengthError(password, 6);
     let isMatchPassword = checkMatchPassword(password, passwordConfirm);
-
-    if (
-        isEmptyError ||
-        isEmailError ||
-        isUsernameLengthError ||
-        isPasswordLengthError ||
-        isMatchPassword
-    ) {
-        // do nothing
-    } else {
-        // logic, call API, ...
-    }
 });

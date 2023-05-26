@@ -129,7 +129,13 @@ main {
     font-size: 1.3rem;
     padding: 0 1rem;
     border-radius: 4px;
-    margin-bottom: 1.4rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.input-element.error {
+    color: red;
+    border: 1px solid red;
 }
 
 .input-element input {
@@ -138,6 +144,13 @@ main {
     border: none;
     background-color: transparent;
     padding: 1.4rem 0;
+}
+
+.input-error {
+    position: absolute;
+    bottom: -12px;
+    left: 0px;
+    font-size: 1rem;
 }
 
 .btn-login {

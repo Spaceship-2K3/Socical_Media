@@ -139,24 +139,49 @@
     display: flex;
     justify-content: space-between;
 }
-.market-head h2 {
+.market-head .market-head-title {
     font-size: 2.3rem;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
 }
-
-.market-location {
+.market-head .market-head-title a {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: rgb(0, 110, 255);
+    margin-top: 0.6rem;
 }
-.market-location:hover {
+.market-head .market-head-title a:hover {
     text-decoration: underline;
 }
-.market-location i {
-    font-size: 1.4rem;
+.market-head .market-head-title a i {
+    font-size: 0.8rem;
     margin-right: 6px;
+}
+
+.market-head-cart {
+    color: rgb(0, 162, 255);
+    font-size: 3rem;
+    margin-right: 1rem;
+    position: relative;
+    text-decoration: none;
+}
+
+#cart-quantity {
+    position: absolute;
+    font-size: 1.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 100rem;
+    background-color: rgb(255, 0, 0);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: -4px;
+    right: -7px;
+    color: #ffffff;
 }
 
 .product-list {
@@ -178,6 +203,9 @@
     padding: 1rem;
     background-color: #fff;
     border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 114px;
 }
 
 .product-info p {
@@ -200,4 +228,34 @@
 
 .product-info-head p {
     font-size: 1.4rem;
+}
+
+/* product-item-control */
+.product-item-control {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-item-control p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.product-quantity {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.product-quantity span {
+    margin: 0 8px;
+}
+.product-quantity i {
+    cursor: pointer;
+}
+.product-quantity i.fa-minus {
+    color: red;
+}
+.product-quantity i.fa-plus {
+    color: rgb(0, 252, 21);
 }

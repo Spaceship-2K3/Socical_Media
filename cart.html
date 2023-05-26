@@ -11,7 +11,8 @@
         />
         <link rel="stylesheet" href="./assets/css/common.css" />
         <link rel="stylesheet" href="./assets/css/marketplace.css" />
-        <title>Marketplace</title>
+        <link rel="stylesheet" href="./assets/css/cart.css" />
+        <title>Cart</title>
     </head>
     <body>
         <!-- ! Navbar -->
@@ -196,18 +197,44 @@
             <div class="market-right">
                 <div class="market-head">
                     <h2 class="market-head-title">
-                        Lựa chọn hôm nay
-                        <a href="#!" class="market-location">
-                            <i class="fa-solid fa-location-dot"></i>
-                            UTEHY. 10km
+                        Quay về Shop
+                        <a href="./marketplace.html" class="market-location">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            Shop đồ chơi
                         </a>
                     </h2>
-                    <a href="./cart.html" class="market-head-cart">
+                    <a href="#!" class="market-head-cart" id="market-head-cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span id="cart-quantity">0</span>
                     </a>
                 </div>
-                <ul class="product-list"></ul>
+                <!-- todo : cartProduct -->
+
+                <div id="cartProduct" class="cartProduct">
+                    <div class="cart-empty" id="cart-empty">
+                        <h2>Không có gì trong giỏ hàng</h2>
+                        <a href="./marketplace.html">Quay về shop</a>
+                        <img src="./img/Marketplace/cart-empty.png" alt="" />
+                    </div>
+                    <div class="cartProduct-control">
+                        <h3 class="total-money">
+                            Tổng tiền : $ <span id="total-money"></span>
+                        </h3>
+                        <div class="btn-check-out">
+                            <button id="btn-check-out" type="button">
+                                Tính tiền
+                            </button>
+                            <button
+                                onclick="removeAll()"
+                                id="btn-clear-cart"
+                                type="button"
+                            >
+                                Xóa toàn bộ
+                            </button>
+                        </div>
+                        <ul class="cart-product-list"></ul>
+                    </div>
+                </div>
             </div>
         </main>
 
@@ -282,6 +309,6 @@
         </footer>
     </body>
     <script src="./app.js"></script>
-    <script src="data.js"></script>
-    <script src="./addToCart.js"></script>
+    <script src="./data.js"></script>
+    <script src="./cart.js"></script>
 </html>
